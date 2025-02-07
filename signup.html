@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/tesla-logo.png" type="image/x-icon">
+    <!-- Page Title -->
+    <title>Tesla - SignUp</title>
+</head>
+<body>
+    
+    <!-- Main Container -->
+    <div class="@container/main bg-[#F5F4F8] w-full min-h-svh flex flex-col justify-center md:flex-row">
+        
+        <div class="absolute md:min-w-[45%] md:right-0 min-w-screen h-40 bg-[#3E6AE1]/50 rounded-full shadow-xl  blur-xl -top-31"></div>
+
+        <!-- Tesla Branding Section -->
+        <div class="@container/preview hidden md:flex w-[50%] h-full min-h-svh m-0" >
+            <div style="background-image: url('/assets/image8.png'); background-size: cover; background-position: center;" class="object-center w-[100%] h-screen bg-black flex flex-col justify-between p-12">
+                <div class="h-[35%] w-[100%]  flex flex-col items-center justify-center">
+                    <p class="special-text text-white lg:text-8xl text-center sm:text-7xl drop-shadow-xl">We are Tesla</p>
+                    <button class="bg-gradient-to-r from-[#80b5e0] via-[#207ecc] to-[#80b5e0] rounded-sm w-60 max-w-60 h-13 max-h-13 text-white font-bold text-center text-lg tracking-wide mt-6 hover:from-[#207ecc] hover:via-[#80b5e0] hover:to-[#207ecc] cursor-pointer hover:transition hover:duration-200" type="button">JOIN OUR TEAM</button>
+                </div>
+
+                <div class="h-[19%] w-[100%] flex justify-evenly items-center flex-wrap">
+                    <button class="border-3 border-white border-solid rounded-sm w-60 max-w-60 h-13 max-h-13 bg-transparent text-white text-lg tracking-wide m-0.5 hover:bg-white hover:text-black cursor-pointer hover:transition hover:duration-200" type="button">Find Us</button>
+                    <button class="bg-[#242424] rounded-sm w-60 max-w-60 h-13 max-h-13 text-white text-lg tracking-wide m-0.5 hover:bg-[#2e2e2e] cursor-pointer hover:transition hover:duration-200" type="button">Download Tesla App</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SignUp Section -->
+        <div class="@container/signup flex flex-col justify-between md:w-[50%] md:min-h-svh md:justify-center">
+            <div class="flex flex-col mx-7  items-center">
+                <img class="scale-80 sm:90 md:scale-100 drop-shadow-2xl mt-8 lg:mt-0 -translate-x-1.5" src="./assets/tesla-textlogo.png" alt="Tesla">
+
+                <!-- <h1 class="font-black text-3xl p-4">Create A Account</h1> -->
+
+                <div class="mt-4 sm:mt-12 w-86 md:w-100 max-w-full">
+
+                     <!-- Username Input -->
+                     <div class="mb-5  w-full">
+                        <div class="tracking-[0.2rem] mb-2 font-medium text-lg text-wrap">Username</div>
+                        <input type="text" placeholder="John Doe" class="bg-[#D9D9D9] outline-0 text-black font-light tracking-[0.2rem] p-1 pl-4 w-full rounded-sm h-11" >
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="mb-5 w-full">
+                        <div class="tracking-[0.2rem] mb-2 font-medium text-lg text-wrap">Email Address</div>
+                        <input type="email" placeholder="johndoe@email.com" class="bg-[#D9D9D9] outline-0 text-black font-light tracking-[0.2rem] p-1 pl-4 w-full rounded-sm h-11" >
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="mb-3 w-full">
+                        <div class="tracking-[0.2rem] mb-2 font-medium text-lg text-wrap">Password</div>
+                        <div class="bg-[#D9D9D9] text-[#9C9A9A] tracking-[0.2rem] p-1 pl-4 w-full font-light rounded-sm h-11 flex justify-between items-center">
+                            <input type="password" placeholder="**********" class="w-full outline-0">
+                            <i class="fa-solid fa-eye-slash mr-2 scale-85"></i>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me and Forgot Password -->
+                    <div class="flex justify-between mb-5 w-full flex-wrap">
+                        <div class="flex items-center">
+                            <input type="checkbox" name="rem" id="rem" class="accent-black "><div class="text-sm font-light ml-2">Remember me</div>
+                        </div>
+                        <div class="underline text-sm"><a href="#" class="font-light">Forgot Password?</a></div>
+                    </div>
+
+                    <!-- SignUp Button -->
+                    <div class="mb-4 w-full">
+                        <button class="w-full h-11 bg-[#3E6AE1] rounded-sm text-lg text-white tracking-wide50 cursor-pointer hover:bg-[#1f56e0ef]">SignUp</button>
+                    </div>
+
+                    <!-- Register Link -->
+                    <div class="text-center mb-5 w-full">Already Registered? <a href="/index.html" class="text-[#3E6AE1]">Login Here</a></div>
+
+                    <!-- Divider -->
+                    <div class="w-full flex mb-5 justify-center">
+                        <div class="flex items-center justify-center w-full text-[#9C9A9A]">
+                            <div class="w-[34%] h-0.5 bg-[#D9D9D9]"></div>
+                            <span class="mx-4">OR</span>
+                            <div class="w-[34%] h-0.5 bg-[#D9D9D9]"></div>
+                        </div>
+                    </div>
+
+                    <!-- Continue with X -->
+                    <div>
+                        <button class="w-full py-3 bg-black rounded-sm text-lg text-white flex items-center justify-center tracking-[0.2rem] cursor-pointer hover:drop-shadow-xl">Continue with your <img src="./assets/x.svg" alt="X" class="h-5 mx-3"></button>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="text-sm text-center -bottom-0 mt-8 text-[#9C9A9A] content-end">© 2025 Tesla Co. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
